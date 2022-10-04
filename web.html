@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Web Design Company</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+       <nav>
+            <div class="nav-links" id="navLinks">
+                
+                <div class="logo">
+                <a href="">WEBX</a>
+            </div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+              
+     <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ContactUs.html">ContactUs</a></li>
+        <li><a href="Login.html">Login/Register</a></li>
+      </ul>
+            </div>
+           
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       
+     <div class="text-box">
+         <h1>Web Design Company</h1>
+         <p>Start building your custom designs for free.</p>
+          <a href="GetStarted.html" class="hero-btn">Get Started</a> 
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+         function hideMenu(){
+            navLinks.style.right="-250px";
+        }
+    </script>
+</body>
+ </html>
